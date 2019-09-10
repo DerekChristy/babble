@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<% include ../partials/babble-head %>
+</head>
+<body>
+    <div id="container">
+        <div id="chat-app">
+            <div id="chat-title">
+                <p>Hi <name id="user"><%= user %></name></p>
+            </div>
+            <div id="chat-window">
+                <div id="output"></div>
+                <div id="feedback"></div>
+            </div>
+            <div id="input-container">
+                <input id="message" type="text" placeholder="Enter message" autofocus>
+                <button id="send" type="button">Send</button>
+            </div>
+            <!-- online users-->
+            <ul id="users-tab">
+               
+            </ul>
+        </div>
+    </div>
+    <script src="/scripts/chat.js"></script>
+</body>
+</html>
